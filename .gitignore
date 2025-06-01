@@ -8,3 +8,6 @@
 mcrcon
 todo
 *.plist
+
+.env*
+!.env.example

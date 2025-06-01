@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "[Debug] Code",
+      "preLaunchTask": "build",
+      "cwd": "${workspaceFolder}",
+      "program": "${workspaceFolder}/mcrcon",
+      "args": [
+        "-H",
+        "localhost",
+        "-P",
+        "25575",
+        "-p",
+        "minecraft",
+        "/time set day"
+      ],
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
